@@ -9,7 +9,7 @@ with open("changes.txt","a+") as f :
             subprocess.call(['git', 'commit', '--date',f"{i} days ago",'-m', commit_message])
             subprocess.call(['git', 'push'])
 
-    #s
+#s
 
 
 
