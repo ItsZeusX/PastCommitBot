@@ -1,14 +1,14 @@
-# import random
-
-# for i in range(1,365) :
-#     if random.randint(0,9) > 8 :
-#         print(i)
-
+import random
 import subprocess
 
-commit_message = "My commit message"
-subprocess.call(['git', 'add', '.'])
-subprocess.call(['git', 'commit', '-m', commit_message])
-subprocess.call(['git', 'push'])
+for i in range(1,365) :
+    if random.randint(0,9) > 8 :
+        commit_message = f"Day {i}"
+        subprocess.call(['git', 'add', '.'])
+        subprocess.call(['git', 'commit', '--date',f"{i} days ago",'-m', commit_message])
+        subprocess.call(['git', 'push'])
 
 #s
+
+
+
