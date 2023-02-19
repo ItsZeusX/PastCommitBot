@@ -2,7 +2,7 @@ import random
 import subprocess
 for i in range(1,365) :
     
-    if random.randint(0,9) > 8 :
+    if random.randint(0,9) > 6 :
         
         f = open("changes.txt","a+")
         f.write(f'Commited Date Number : {i}')
